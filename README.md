@@ -7,4 +7,7 @@ Aiming to kernel tunings but it is needed to recall the C and C++ type of code a
 
 2) Write own OS // https://www.youtube.com/watch?v=1rnA6wpF0o4&feature=youtu.be // Thanks
 
-3) Modify the kernel for the OS // ???
+3) Modify the kernel for the OS //
+- Simple module testing added:
+https://www.thegeekstuff.com/2013/07/write-linux-kernel-module/
+Thanks Lakshmanan Ganapathy 

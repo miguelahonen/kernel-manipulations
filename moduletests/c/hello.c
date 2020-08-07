@@ -6,6 +6,8 @@ MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Lakshmanan");
 MODULE_DESCRIPTION("A Simple Hello World module");
 
+// Original by Lakshmanan Ganapathy, thanks!
+
 static int __init hello_init(void)
 {
     printk(KERN_INFO "Hello world!\n");
