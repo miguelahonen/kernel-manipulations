@@ -27,7 +27,7 @@ static int __init thefirstmod_init(void) {
 		return major;
 	}
 
-	printk(KERN_INFO "The first module has been loaded\n");
+	printk(KERN_INFO "The first module has been loaded%d\n", major);
 	return 0;
 
 }
@@ -53,7 +53,7 @@ static int dev_release(struct inode *inodep, struct file *filep) {
 
 static ssize_t dev_read(struct file *filep, char *buffer, size_t len, loff_t *offset) {
 	int errors = 0;
-	char *message = "never gonna give you up, never gonna let you down...";
+	char *message = "The egg opened around thirty years ago - kwaak!\n";
 	int message_len = strlen(message);
 
 	errors = copy_to_user(buffer, message, message_len);
